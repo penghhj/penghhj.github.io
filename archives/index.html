@@ -245,7 +245,15 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
   var backgroundImages = [];
   
     
-      backgroundImages.push('https://api.addesp.com/image/wallpaper/acg');
+      backgroundImages.push('https://api.addesp.com/image/wallpaper/acg?usesless=0');
+    
+      backgroundImages.push('https://api.addesp.com/image/wallpaper/acg?usesless=1');
+    
+      backgroundImages.push('https://api.addesp.com/image/wallpaper/acg?usesless=2');
+    
+      backgroundImages.push('https://api.addesp.com/image/wallpaper/acg?usesless=3');
+    
+      backgroundImages.push('https://api.addesp.com/image/wallpaper/acg?usesless=4');
     
   
   $('#post').each(function(i){
@@ -261,7 +269,7 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
   });
   $(".fancybox").fancybox();
 
-var vegasConfig = {"preload­Image":true,"transition":["flash"],"timer":true,"delay":1500000,"shuffle":true,"count":12};
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","zoomIn","swirLeft","swirRight","flash","flash2"],"timer":true,"delay":15000,"shuffle":true,"count":5};
 var unsplashConfig = {"gravity":"center"};
 // is show background images
 var turnoffBackgroundImage = false;
